@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  test-app
+//  RGBiOS
 //
 //  Created by deniskhoshaba on 29/1/18.
 //  Copyright © 2018 deniskhoshaba. All rights reserved.

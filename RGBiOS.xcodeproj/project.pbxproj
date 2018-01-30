@@ -15,13 +15,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B7A467BB201EA54600C7C18E /* test-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A467BE201EA54600C7C18E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A467C0201EA54600C7C18E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7A467C3201EA54600C7C18E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7A467C5201EA54600C7C18E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A467C8201EA54600C7C18E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B7A467CA201EA54600C7C18E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A467CA201EA54600C7C18E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RGBiOS/Info.plist; sourceTree = SOURCE_ROOT; };
+		B7E9078E2020325E006BE99B /* RGBiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,20 +38,12 @@
 		B7A467B2201EA54600C7C18E = {
 			isa = PBXGroup;
 			children = (
-				B7A467BD201EA54600C7C18E /* test-app */,
-				B7A467BC201EA54600C7C18E /* Products */,
+				B7A467BD201EA54600C7C18E /* RGBiOS */,
+				B7E9078E2020325E006BE99B /* RGBiOS.app */,
 			);
 			sourceTree = "<group>";
 		};
-		B7A467BC201EA54600C7C18E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B7A467BB201EA54600C7C18E /* test-app.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B7A467BD201EA54600C7C18E /* test-app */ = {
+		B7A467BD201EA54600C7C18E /* RGBiOS */ = {
 			isa = PBXGroup;
 			children = (
 				B7A467BE201EA54600C7C18E /* AppDelegate.swift */,
@@ -61,15 +53,15 @@
 				B7A467C7201EA54600C7C18E /* LaunchScreen.storyboard */,
 				B7A467CA201EA54600C7C18E /* Info.plist */,
 			);
-			path = "test-app";
+			path = RGBiOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7A467BA201EA54600C7C18E /* test-app */ = {
+		B7A467BA201EA54600C7C18E /* RGBiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7A467CD201EA54600C7C18E /* Build configuration list for PBXNativeTarget "test-app" */;
+			buildConfigurationList = B7A467CD201EA54600C7C18E /* Build configuration list for PBXNativeTarget "RGBiOS" */;
 			buildPhases = (
 				B7A467B7201EA54600C7C18E /* Sources */,
 				B7A467B8201EA54600C7C18E /* Frameworks */,
@@ -79,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = "test-app";
-			productName = "test-app";
-			productReference = B7A467BB201EA54600C7C18E /* test-app.app */;
+			name = RGBiOS;
+			productName = RGBiOS;
+			productReference = B7E9078E2020325E006BE99B /* RGBiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +92,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B7A467B6201EA54600C7C18E /* Build configuration list for PBXProject "test-app" */;
+			buildConfigurationList = B7A467B6201EA54600C7C18E /* Build configuration list for PBXProject "RGBiOS" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,11 +101,11 @@
 				Base,
 			);
 			mainGroup = B7A467B2201EA54600C7C18E;
-			productRefGroup = B7A467BC201EA54600C7C18E /* Products */;
+			productRefGroup = B7A467B2201EA54600C7C18E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7A467BA201EA54600C7C18E /* test-app */,
+				B7A467BA201EA54600C7C18E /* RGBiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -193,8 +185,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = deniskhoshaba;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -250,8 +244,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = deniskhoshaba;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -274,11 +270,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "test-app/Info.plist";
+				DEVELOPMENT_TEAM = deniskhoshab;
+				INFOPLIST_FILE = RGBiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test-app.test-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RGBiOS.RGBiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = deniskhoshaba;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +288,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "test-app/Info.plist";
+				DEVELOPMENT_TEAM = deniskhoshab;
+				INFOPLIST_FILE = RGBiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test-app.test-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RGBiOS.RGBiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = deniskhoshaba;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7A467B6201EA54600C7C18E /* Build configuration list for PBXProject "test-app" */ = {
+		B7A467B6201EA54600C7C18E /* Build configuration list for PBXProject "RGBiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7A467CB201EA54600C7C18E /* Debug */,
@@ -310,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7A467CD201EA54600C7C18E /* Build configuration list for PBXNativeTarget "test-app" */ = {
+		B7A467CD201EA54600C7C18E /* Build configuration list for PBXNativeTarget "RGBiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7A467CE201EA54600C7C18E /* Debug */,
